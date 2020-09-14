@@ -15,7 +15,7 @@ class App extends Component {
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link to="/" className="navbar-brand">MERN-Stack Ale-PI App</Link>
-            <div className="collapse navbar-collaps">
+            <div className="collapse navbar-collapse">
               <ul className="navbar-nav mr-auto">
                 <li className="navbar-item">
                   <Link to="/" className="nav-link">Beers</Link>
