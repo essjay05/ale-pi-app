@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import BeersList from './components/beers-list.component';
 import CreateBeer from './components/create-beer.component';
 import EditBeer from './components/edit-beer.component';
+import BeersList from './components/beers-list.component';
 
 class App extends Component {
   render () {
@@ -29,7 +29,7 @@ class App extends Component {
           <br />
           <Route path="/" exact component={BeersList} />
           <Route path="/edit:id" component={EditBeer} />
-          <Route path="/create" compoenent={CreateBeer} />
+          <Route path="/create" component={CreateBeer} />
         </div>
       </Router>
     )
