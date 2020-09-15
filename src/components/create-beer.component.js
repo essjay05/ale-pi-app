@@ -144,3 +144,5 @@ export default class CreateBeer extends Component {
         )
     }
 }
+
+// 09/14/2020 Successful test submission of Front End Create form
