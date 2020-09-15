@@ -58,7 +58,7 @@ export default class CreateBeer extends Component {
         });
     }
     
-    onsubmit(e) {
+    onSubmit(e) {
         e.preventDefault();
     
         console.log(`Form submitted.`);
@@ -79,7 +79,7 @@ export default class CreateBeer extends Component {
             beer_collected: false
         }
     }
-    
+
     render() {
         return (
             <div style={{marginTop: 10}}>
