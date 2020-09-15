@@ -10,7 +10,8 @@ export default class CreateBeer extends Component {
         this.onChangeBeerAbv = this.onChangeBeerAbv.bind(this);
         this.onChangeBeerDescription = this.onChangeBeerDescription.bind(this);
         this.onChangeBeerImageSrc = this.onChangeBeerImageSrc.bind(this);
-    
+        this.onSubmit = this.onSubmit.bind(this);
+        
         this.state = {
             beer_name: '',
             beer_brewery: '',
@@ -25,8 +26,8 @@ export default class CreateBeer extends Component {
     onChangeBeerName(e) {
         this.setState({
             beer_name: e.target.value
-        })
-    };
+        });
+    }
     
     onChangeBeerBrewery(e) {
         this.setState({
@@ -69,7 +70,7 @@ export default class CreateBeer extends Component {
         console.log(`Beer Description: ${this.state.beer_description}`);
         console.log(`Beer Image Source: ${this.state.beer_imageSrc}`);
     
-        this.setState = {
+        this.setState = ({
             beer_name: '',
             beer_brewery: '',
             beer_type: '',
@@ -77,7 +78,7 @@ export default class CreateBeer extends Component {
             beer_description: '',
             beer_imageSrc: '',
             beer_collected: false
-        }
+        })
     }
 
     render() {
